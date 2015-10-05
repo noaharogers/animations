@@ -1,0 +1,30 @@
+/* ===========================================================
+   Layout
+   =========================================================== */
+
+html { box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  font: $body-font;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: $white;
+  color: $black;
+}
+
+.container {
+  @extend %clearfix;
+  margin: 0 auto;
+  padding: 2rem 0;
+  width: 90%;
+
+  @media #{$medium} { max-width: 740px; }
+}

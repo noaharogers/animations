@@ -1,0 +1,12 @@
+# Site settings
+title: Animations
+description: CSS Animation project
+baseurl: "/animations"
+url: "http://noahrogers.com"
+
+# Build settings
+markdown: kramdown
+
+# Sass settings
+sass:
+  sass_dir: assets/stylesheets
