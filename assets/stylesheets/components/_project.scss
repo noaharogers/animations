@@ -1,0 +1,158 @@
+/* ===========================================================
+   Project
+   =========================================================== */
+
+.example-box {
+  background: lighten($primary, 4%);
+  border-radius: $border-radius;
+  padding: 3rem 0;
+  position: relative;
+  margin: 1.5rem 0;
+
+  &:last-of-type { margin-bottom: 0; }
+}
+
+/* ===========================================================
+   Animations
+   =========================================================== */
+
+
+/* ------ Rotate and Morph ------ */
+
+.square {
+  background: $secondary;
+  border-radius: $border-radius;
+  height: 90px;
+  margin: 0 auto;
+  opacity: .8;
+  width: 90px;
+}
+
+.example-box:hover .rotate-and-morph {
+  // animation: both rotate-morph 2.5s infinite;
+  animation: rotate-morph;
+  animation-direction: alternate;
+  animation-duration: 2.5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotate-morph {
+  25% {
+    background: purple;
+    border-radius: 16px;
+    transform: rotate(45deg);
+  }
+
+  50% {
+    background: red;
+    border-radius: 24px;
+    transform: rotate(90deg);
+  }
+
+  75% {
+    background: orange;
+    border-radius: 38px;
+    transform: rotate(135deg);
+  }
+
+  100% {
+    background: yellow;
+    border-radius: $circle;
+    transform: rotate(180deg);
+  }
+}
+
+/* ------ Slide ------ */
+
+.square--small {
+  height: 50px;
+  width: 50px;
+}
+
+.square--opacity { opacity: .8; }
+
+.square--absolute {
+  position: absolute;
+  left: 2rem;
+  top: 2rem;
+}
+
+.example-box:hover .slide {
+  animation: slide 3s ease-in-out infinite alternate;
+}
+
+.example-box:active .square { animation-play-state: paused; }
+
+@keyframes slide {
+  0% { left: 2rem; }
+  25% { background: purple; }
+  50% { background: red; }
+  75% { background: orange; }
+  100% {
+    background: yellow;
+    left: 80%;
+    opacity: .5;
+    transform: rotate(180deg);
+  }
+}
+
+/* ------ Rotate & Move ------ */
+
+.example-box:hover .rotate {
+  animation: rotate-and-shrink 1.75s ease-in forwards alternate;
+}
+
+@keyframes rotate-and-shrink {
+  100% {
+    transform: rotate(225deg) scale(.6);
+  }
+}
+
+.orb {
+  background: $secondary;
+  border-radius: $circle;
+  bottom: 0;
+  height: 22px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 22px;
+}
+
+.example-box:hover {
+  .move-1 { animation: move-1 1.75s ease-in-out forwards alternate; }
+  .move-2 { animation: move-2 1.75s ease-in-out forwards alternate; }
+  .move-3 { animation: move-3 1.75s ease-in-out forwards alternate; }
+  .move-4 { animation: move-4 1.75s ease-in-out forwards alternate; }
+}
+
+@keyframes move-1 {
+  100% {
+    left: 80%;
+    top: 50%;
+  }
+}
+
+@keyframes move-2 {
+  100% {
+    right: 80%;
+    top: 50%;
+  }
+}
+
+@keyframes move-3 {
+  100% {
+    bottom: 50%;
+    right: 80%;
+  }
+}
+
+@keyframes move-4 {
+  100% {
+    bottom: 50%;
+    left: 80%;
+  }
+}

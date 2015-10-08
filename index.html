@@ -1,8 +1,116 @@
 ---
 layout: default
 ---
-<div class="container">
-  <h1>CSS Animations</h1>
-  <p>Bonbon jelly beans biscuit gummi bears jelly-o biscuit pie. Pastry halvah sweet fruitcake cookie powder. Icing danish bonbon pie halvah toffee oat cake. Powder jujubes jelly-o sugar plum sugar plum gingerbread marshmallow I love. Lemon drops marshmallow jelly-o tiramisu bonbon pastry. Cookie gummies muffin macaroon carrot cake bear claw. Bonbon I love bonbon brownie. Chocolate cake fruitcake candy canes carrot cake powder gingerbread. Dragée candy chocolate danish. Chocolate cake gingerbread soufflé tart jelly-o tiramisu muffin oat cake. Biscuit fruitcake dragée donut. I love fruitcake cake liquorice icing tiramisu jelly. Powder gummi bears jelly beans sweet roll.</p>
-  <p>I love fruitcake tart I love sesame snaps lemon drops. Cotton candy danish icing apple pie jelly-o icing lollipop. Soufflé croissant wafer. Icing marzipan soufflé. Fruitcake I love lollipop sweet tart sweet roll. Cake wafer I love pastry chupa chups cake. Gummies I love cupcake ice cream. Dragée jelly sweet jelly beans pastry sugar plum lollipop. Powder toffee fruitcake dragée. Jelly beans dragée I love. Liquorice halvah jelly-o apple pie biscuit cheesecake brownie cotton candy jelly-o. Powder halvah ice cream donut cookie soufflé biscuit. Liquorice I love cake sweet roll I love. Sesame snaps I love gummi bears croissant topping caramels sweet danish.</p>
-</div>
+<section>
+  <div class="container">
+    <h4 class="section__title">Introduction</h4>
+    <p>Our brain is wired in such a way that moving objects grab our attention. Because of this, adding animations and transitions is a great way to keep users engaged and highlight areas of importance within our projects.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h4 class="section__title">Uses</h4>
+    <p>One great thing about animations, transforms and transitions is that they can be added to almost any element. We can can perform simple tasks like adjusting the background or text color when a user hovers over link or much more complex tasks like <a href="http://neography.com/experiment/circles/solarsystem/" target="_blank">recreating the solar system</a> with just CSS.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h4 class="section__title">Walkthrough</h4>
+    <div class="row">
+      <div class="column">
+        <p>Sure, recreating the solar system with CSS may not have everyday pratical use, but there are a variety of animations that, if used correctly, can really make your website stand out.</p>
+        <p>Let's go ahead and walkthrough the basics of an animation. Starting to use CSS animations is not very difficult and the requirements are fairly straightforward.</p>
+        <p>One of the first things we will need to think about is  <code>@keyframes</code>.</p>
+        <p>The <code>@keyframes</code> property allows us to style our element differently at certain times throughout it's animation.</p>
+      </div>
+      <div class="column">
+        <script src="https://gist.github.com/noaharogers/0f3ca95f2cf88f3ce8af.js"></script>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <p>The next step is to create the animation.</p>
+        <p>We can do this by either writing long or shorthand code. I prefer shorthand because of how compact it is. It keeps our code nice and clean.</p>
+      </div>
+      <div class="column">
+        <script src="https://gist.github.com/noaharogers/05a3d9d0090831f27a2a.js"></script>
+        <script src="https://gist.github.com/noaharogers/3113e1e6e34f340a80f4.js"></script>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <p>The last step is to add the animation to our element.</p>
+      </div>
+      <div class="column">
+        <script src="https://gist.github.com/noaharogers/3a2f3a86516a7e3687f7.js"></script>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h4 class="section__title">The final product</h4>
+    <div class="row">
+      <p>Once we've finished styling our animation to our liking it's time to take a look at it. Go ahead and take a look! To trigger the animation hold your mouse anywhere over the example box.</p>
+    </div>
+    <div class="example-box">
+      <figure class="square rotate-and-morph"></figure>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h4 class="section__title">More neat properties</h4>
+
+    <div class="row">
+      <div class="column">
+        <p>Use your cursor to hover over each example box to trigger the animation.</p>
+        <div class="example-box">
+          <figure class="square square--small"></figure>
+          <figure class="square square--small square--opacity square--absolute slide"></figure>
+        </div>
+      </div>
+      <div class="column">
+        <script src="https://gist.github.com/noaharogers/2ea22eb505831dfa7354.js"></script>
+        <script src="https://gist.github.com/noaharogers/7ea68330581d09863b95.js"></script>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <p>Use your cursor to hover over each example box to trigger the animation.</p>
+        <div class="example-box">
+          <figure class="square square--small rotate"></figure>
+          <figure class="orb move-1"></figure>
+          <figure class="orb move-2"></figure>
+          <figure class="orb move-3"></figure>
+          <figure class="orb move-4"></figure>
+        </div>
+      </div>
+      <div class="column">
+        <script src="https://gist.github.com/noaharogers/34c454c49510e799e18d.js"></script>
+        <script src="https://gist.github.com/noaharogers/2aa6f4bf4a1a99f62ea7.js"></script>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h4 class="section__title">Scalable Vector Graphics</h4>
+    <p>Perhaps one of the coolest things about animations is our ability to manipulate Scalable Vector Graphic or more commonly know as SVG files.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h4 class="section__title">Compatibility</h4>
+    <p><a href="http://caniuse.com/#search=css%20animation">CSS Animations</a>.</p>
+  </div>
+</section>

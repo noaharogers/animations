@@ -1,0 +1,22 @@
+/* ===========================================================
+   Code
+   =========================================================== */
+
+code {
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  font-size: .9rem;
+  padding: .2rem .3rem;
+}
+
+/* ===========================================================
+   Gists
+   =========================================================== */
+.gist-file {
+  border: 0 !important;
+  border-radius: $border-radius !important;
+  overflow: hidden !important;
+  margin-bottom: 0 !important;
+}
+
+.gist-data { padding: .5rem 0 !important; }
+.gist-meta { display: none !important; }

@@ -1,0 +1,45 @@
+/* ===========================================================
+   Header
+   =========================================================== */
+
+header {
+  background: $primary;
+  color: $white;
+  text-align: center;
+}
+
+header .container { padding: 4rem 0; }
+
+.hero__title {
+  animation: both flipIn ease-in-out 1.25s;
+  background: $secondary;
+  border-radius: $border-radius;
+  display: inline-block;
+  margin-bottom: 1.2rem;
+  padding: .6rem 1.4rem;
+  text-shadow: 1px 1px 2px $dark-shadow;
+}
+
+/* ===========================================================
+   Header Animations
+   =========================================================== */
+
+@keyframes flipIn {
+  0% {
+    transform: perspective(300px) rotateX(60deg);
+    opacity: 0;
+  }
+
+  40% {
+    transform: perspective(100px) rotateX(-10deg);
+  }
+
+  75% {
+    transform: perspective(0) rotateX(20deg);
+  }
+
+  100% {
+    transform: perspective(0) rotateX(0deg);
+    opacity: 1;
+  }
+}
