@@ -47,12 +47,6 @@ layout: default
         <script src="https://gist.github.com/noaharogers/3a2f3a86516a7e3687f7.js"></script>
       </div>
     </div>
-  </div>
-</section>
-
-<section>
-  <div class="container">
-    <h4 class="section__title">The final product</h4>
     <div class="row">
       <p>Once we've finished styling our animation to our liking it's time to take a look at it. Go ahead and take a look! To trigger the animation hold your mouse anywhere over the example box.</p>
     </div>
@@ -64,40 +58,61 @@ layout: default
 
 <section>
   <div class="container">
-    <h4 class="section__title">More neat properties</h4>
-
+    <h4 class="section__title">@Keyframes continued</h4>
     <div class="row">
       <div class="column">
-        <p>Use your cursor to hover over each example box to trigger the animation.</p>
-        <div class="example-box">
-          <figure class="square square--small"></figure>
-          <figure class="square square--small square--opacity square--absolute slide"></figure>
-        </div>
+        <p>This particular animation changes background, rotates and moves to the right  throughout it's <code>@keyframes</code>. I call it a slide animation.</p>
+        <p>If you are creating a simple animation where you only want a defined animation start and end you can subsitute <code>from</code> and <code>to</code> for <code>0%</code> and <code>100%</code> respectively.</p>
+        <p>Instead of animating abruptly at <code>to</code>, the styles are applied gradually throughout the animation.</p>
+        <p>Go ahead and try for yourself. Use your cursor to hover over the example box to trigger the animation.</p>
       </div>
       <div class="column">
-        <script src="https://gist.github.com/noaharogers/2ea22eb505831dfa7354.js"></script>
+        <div class="margin-bottom">
+          <script src="https://gist.github.com/noaharogers/2ea22eb505831dfa7354.js"></script>
+        </div>
         <script src="https://gist.github.com/noaharogers/7ea68330581d09863b95.js"></script>
       </div>
     </div>
+    <div class="row">
+      <div class="example-box">
+        <figure class="square square--small"></figure>
+        <figure class="square square--small square--opacity square--absolute slide"></figure>
+      </div>
+    </div>
+    <div class="row">
+    </div>
+  </div>
+</section>
 
+<section>
+  <div class="container">
+    <h4 class="section__title">Animation properties</h4>
     <div class="row">
       <div class="column">
-        <p>Use your cursor to hover over each example box to trigger the animation.</p>
-        <div class="example-box">
-          <figure class="square square--small rotate"></figure>
-          <figure class="orb move-1"></figure>
-          <figure class="orb move-2"></figure>
-          <figure class="orb move-3"></figure>
-          <figure class="orb move-4"></figure>
-        </div>
+        <p>The <code>animation-direction</code> defines whether or not the animation should play in <code>normal</code>, <code>reverse</code> or <code>alternate</code> cycles.</p>
+        <p>The <code>animation-duration</code> defines how long it should take the animation to complete one cycle.</p>
+        <p>The <code>animation-iteration-count</code> determines how many cycles the animation will play.</p>
       </div>
       <div class="column">
-        <script src="https://gist.github.com/noaharogers/34c454c49510e799e18d.js"></script>
+        <div class="margin-bottom">
+          <script src="https://gist.github.com/noaharogers/34c454c49510e799e18d.js"></script>
+        </div>
         <script src="https://gist.github.com/noaharogers/2aa6f4bf4a1a99f62ea7.js"></script>
       </div>
     </div>
-
-
+    <div class="row">
+      <p>This particular animation involves numerous elements, all of which are associated with different animations and <code>@keyframes</code>.
+      <p>Go ahead and try for yourself. Use your cursor to hover over the example box to trigger the animation.</p>
+    </div>
+    <div class="row">
+      <div class="example-box">
+        <figure class="square square--small rotate"></figure>
+        <figure class="orb move-1"></figure>
+        <figure class="orb move-2"></figure>
+        <figure class="orb move-3"></figure>
+        <figure class="orb move-4"></figure>
+      </div>
+    </div>
   </div>
 </section>
 
