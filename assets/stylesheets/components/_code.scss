@@ -11,11 +11,12 @@ code {
 /* ===========================================================
    Gists
    =========================================================== */
+
 .gist-file {
   border: 0 !important;
   border-radius: $border-radius !important;
   overflow: hidden !important;
-  margin-bottom: 0 !important;
+  margin-bottom: 1rem !important;
 }
 
 .gist-data { padding: .5rem 0 !important; }
