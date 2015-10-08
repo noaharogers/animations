@@ -5,9 +5,8 @@
 .example-box {
   background: lighten($primary, 4%);
   border-radius: $border-radius;
-  padding: 3rem 0;
+  padding: 4rem 0;
   position: relative;
-  margin: 1.5rem 0;
 
   &:last-of-type { margin-bottom: 0; }
 }
@@ -29,12 +28,11 @@
 }
 
 .example-box:hover .rotate-and-morph {
-  // animation: both rotate-morph 2.5s infinite;
-  animation: rotate-morph;
-  animation-direction: alternate;
-  animation-duration: 2.5s;
-  animation-fill-mode: both;
-  animation-iteration-count: infinite;
+  animation: rotate-morph 2.5s alternate infinite;
+  // animation: rotate-morph;
+  // animation-direction: alternate;
+  // animation-duration: 2.5s;
+  // animation-iteration-count: infinite;
 }
 
 @keyframes rotate-morph {
@@ -85,11 +83,11 @@
 .example-box:active .square { animation-play-state: paused; }
 
 @keyframes slide {
-  0% { left: 2rem; }
-  25% { background: purple; }
-  50% { background: red; }
-  75% { background: orange; }
-  100% {
+  from {
+    background: purple;
+    left: 2rem;
+  }
+  to {
     background: yellow;
     left: 80%;
     opacity: .5;
