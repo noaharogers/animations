@@ -4,14 +4,13 @@ $regular: 400;
 $bold: 700;
 
 // Header Font
-$header-font: $bold 100%/1.3 "Lato", sans-serif;
+$header-font: $bold 100%/1.3 "Roboto Slab", serif;
 
 // Body Font
 $body-font: $light 100%/1.5 "Lato", sans-serif;
 
 // Colors
 $black:           #263238;
-$dark-shadow:     #777;
 $light-gray:      #f7f7f7;
 $primary:         #37474f;
 $secondary:       #429874;
@@ -20,6 +19,9 @@ $white:           #fff;
 // Border
 $border-dark:     #3e5059;
 $border-light:    #ddd;
+
+// Shadow
+$dark-shadow:     1px 1px 1px #777;
 
 // Border Radius
 $border-radius:   3px;

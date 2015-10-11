@@ -3,14 +3,26 @@
    =========================================================== */
 
 code {
+  background: #353f44;
+  border-radius: $border-radius;
   font-family: Consolas, "Liberation Mono", Courier, monospace;
   font-size: .9rem;
-  padding: .2rem .3rem;
+  padding: .1rem .2rem;
 }
 
 /* ===========================================================
    Gists
    =========================================================== */
+
+.gist-list {
+  @include clean-list;
+}
+
+.gist-list__item {
+  margin-bottom: 1rem !important;
+
+  &:last-of-type { margin-bottom: 0 !important; }
+}
 
 .gist-file {
   border: 0 !important;

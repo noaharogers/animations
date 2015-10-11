@@ -5,10 +5,36 @@
 .example-box {
   background: lighten($primary, 4%);
   border-radius: $border-radius;
+  overflow: hidden;
   padding: 4rem 0;
   position: relative;
 
   &:last-of-type { margin-bottom: 0; }
+}
+
+.step-number {
+  align-items: center;
+  background: $secondary;
+  border-radius: $circle;
+  color: $white;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  text-shadow: $dark-shadow;
+  width: 50px;
+}
+
+.property-list { @include clean-list; }
+
+.property-list__item {
+  margin-bottom: 1rem;
+
+  h3 {
+    font: $body-font;
+    font-weight: $bold;
+    margin-bottom: 0;
+  }
 }
 
 /* ===========================================================
@@ -21,10 +47,10 @@
 .square {
   background: $secondary;
   border-radius: $border-radius;
-  height: 90px;
+  height: 75px;
   margin: 0 auto;
   opacity: .8;
-  width: 90px;
+  width: 75px;
 }
 
 .example-box:hover .rotate-and-morph {
@@ -38,22 +64,19 @@
 @keyframes rotate-morph {
   25% {
     background: purple;
-    border-radius: 16px;
+    border-radius: 8px;
     transform: rotate(45deg);
   }
-
   50% {
     background: red;
-    border-radius: 24px;
+    border-radius: 12px;
     transform: rotate(90deg);
   }
-
   75% {
     background: orange;
-    border-radius: 38px;
+    border-radius: 24px;
     transform: rotate(135deg);
   }
-
   100% {
     background: yellow;
     border-radius: $circle;
@@ -64,8 +87,8 @@
 /* ------ Slide ------ */
 
 .square--small {
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
 }
 
 .square--opacity { opacity: .8; }
@@ -103,7 +126,7 @@
 
 @keyframes spin-shrink {
   100% {
-    transform: rotate(225deg) scale(.6);
+    transform: rotate(225deg) scale(.5);
   }
 }
 
@@ -122,13 +145,13 @@
 
 .example-box:hover {
   .move-1 {
-    animation: move-1 1.5s ease-in forwards;
+    animation: move-1 .5s ease-in forwards;
   }
   .move-2 {
-    animation: move-2 1.5s ease-in forwards;
+    animation: move-2 1s ease-in forwards;
   }
   .move-3 {
-    animation: move-3 1.5s ease-in forwards;
+    animation: move-3 1.25s ease-in forwards;
   }
   .move-4 {
     animation: move-4 1.5s ease-in forwards;
@@ -160,5 +183,50 @@
   100% {
     bottom: 50%;
     left: 80%;
+  }
+}
+
+svg {
+  display: block;
+  height: auto;
+  margin: 2rem auto;
+  max-width: 250px;
+}
+
+/* ------ Turtle SVG ------ */
+
+.example-box:hover svg {
+  animation: in-and-out 3s infinite alternate;
+}
+
+@keyframes in-and-out {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+	33% {
+    opacity: 0.7;
+		transform: scale(0.9);
+	}
+  50% {
+    transform: rotateY(180deg);
+  }
+	66% {
+    opacity: 1;
+		transform: scale(1);
+	}
+  100% {
+    opacity: 0.7;
+    transform: scale(0.9);
+  }
+}
+
+.example-box:hover .shell {
+  animation: animate-shell 2s ease forwards;
+}
+
+@keyframes animate-shell {
+  100% {
+    fill: #6F4949;
   }
 }

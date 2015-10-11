@@ -20,11 +20,27 @@ body {
   color: $white;
 }
 
-section { border-top: 2px solid $border-dark; }
+section {
+  border-bottom: 3px solid $border-dark;
+
+  &:last-of-type { border: 0; }
+}
+
+.section--alt {
+  background: $black;
+  box-shadow: inset 0 3px 6px rgba(0,0,0,0.3);
+  color: lighten($black, 40%);
+}
+
+.section--example {
+  background: $border-dark;
+  border: 0;
+  text-align: center;
+}
 
 .row {
   @extend %clearfix;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 
   &:last-of-type { margin-bottom: 0; }
 }
@@ -38,9 +54,10 @@ section { border-top: 2px solid $border-dark; }
     margin-bottom: 0;
     margin-left: 5%;
     width: 47.5%;
+
+    &:first-of-type { margin-left: 0; }
   }
 
-  &:first-of-type { margin-left: 0; }
   &:last-of-type { margin-bottom: 0; }
 }
 
@@ -50,5 +67,5 @@ section { border-top: 2px solid $border-dark; }
   padding: 3rem 0;
   width: 90%;
 
-  @media #{$medium} { max-width: 900px; }
+  @media #{$medium} { max-width: 860px; }
 }

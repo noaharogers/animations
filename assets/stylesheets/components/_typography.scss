@@ -6,16 +6,29 @@ h1, h2, h3, h4 {
   font: $header-font;
   margin-top: 0;
   margin-bottom: .5rem;
-  text-transform: uppercase;
 }
 
 h1 {
-  font-size: 1.6rem;
-  letter-spacing: 3px;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
   margin-bottom: 1rem;
+  text-transform: uppercase;
 }
 
-h4 { font-size: .8rem; }
+h2 {
+  font-size: 1rem;
+}
+
+h3 {
+  font-size:.9rem;
+  font-weight: $bold;
+  text-transform: none;
+}
+
+h4 {
+  font-size: .8rem;
+  text-transform: uppercase;
+}
 
 p, ul {
   margin: 0 0 1rem;
@@ -30,6 +43,23 @@ p, ul {
   letter-spacing: 1px;
   margin: 0 auto 1.5rem;
   padding: .5rem 1rem;
+}
+
+.section__header {
+  font-weight: $bold;
+  text-align: center;
+}
+
+.section--alt__header {
+  font: $body-font;
+  font-weight: $bold;
+  text-align: center;
+}
+
+.section--example h2 {
+  font: $body-font;
+  font-size: 1.5rem;
+  margin: 0;
 }
 
 /* ===========================================================

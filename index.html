@@ -1,117 +1,214 @@
 ---
 layout: default
 ---
+
+<div class="test"></div>
 <section>
   <div class="container">
     <h4 class="section__title">Introduction</h4>
     <p>Our brain is wired in such a way that moving objects grab our attention. Because of this, adding animations and transitions is a great way to keep users engaged and highlight areas of importance within our projects.</p>
-  </div>
-</section>
 
-<section>
-  <div class="container">
-    <h4 class="section__title">Uses</h4>
     <p>Animations are powerful. We can add them to almost any element within our markup. Our animations can perform simple tasks like adjusting the background or text color when a user hovers over a link or more complex tasks like <a href="http://neography.com/experiment/circles/solarsystem/" target="_blank">recreating the solar system</a> with just CSS.</p>
   </div>
 </section>
 
+
 <section>
   <div class="container">
-    <h4 class="section__title">Walkthrough</h4>
     <div class="row">
-      <div class="column">
-        <p>Sure, recreating the solar system with CSS may not have pratical use within our projects, but there are a variety of animations that, if used correctly, can really add to the richness of our website.</p>
-        <p>Let's go ahead and walkthrough the basics of an animation. Starting to use CSS animations is not very difficult and the requirements are fairly straightforward.</p>
-        <p>One of the first things we will need to think about is  <code>@keyframes</code>.</p>
-        <p>The <code>@keyframes</code> property allows us to style our element differently at certain times throughout it's animation.</p>
-      </div>
-      <div class="column">
-        <script src="https://gist.github.com/noaharogers/0f3ca95f2cf88f3ce8af.js"></script>
+      <div class="section__header">
+        <span class="step-number">1</span>
+        <h2>Create the @keyframes</h2>
       </div>
     </div>
     <div class="row">
       <div class="column">
-        <p>The next step is to create the animation.</p>
-        <p>We can do this by either writing long or shorthand code. I prefer shorthand because of how compact it is. It keeps our code nice and clean.</p>
+        <p>The <code>@keyframes</code> rule allows us to style our element differently at certain times throughout it's animation.</p>
+        <p>Styles defined through <code>@keyframes</code> are applied gradually throughout the entirety of the animation.</p>
+
       </div>
       <div class="column">
-        <script src="https://gist.github.com/noaharogers/05a3d9d0090831f27a2a.js"></script>
-        <script src="https://gist.github.com/noaharogers/3113e1e6e34f340a80f4.js"></script>
-      </div>
-    </div>
-    <div class="row">
-      <div class="column">
-        <p>The last step is to add the animation to our element.</p>
-      </div>
-      <div class="column">
-        <script src="https://gist.github.com/noaharogers/3a2f3a86516a7e3687f7.js"></script>
-      </div>
-    </div>
-    <div class="row">
-      <p>Once we've finished styling our animation to our liking it's time to take a look at it. Go ahead and take a look! To trigger the animation hold your mouse anywhere over the example box.</p>
-    </div>
-    <div class="example-box">
-      <figure class="square rotate-and-morph"></figure>
+        <script src="https://gist.github.com/noaharogers/f30b069ba85b6831ba1a.js"></script>
     </div>
   </div>
 </section>
 
 <section>
   <div class="container">
-    <h4 class="section__title">@Keyframes continued</h4>
     <div class="row">
-      <div class="column">
-        <p>This particular animation changes background, rotates and moves to the right  throughout it's <code>@keyframes</code>. I call it a slide animation.</p>
-        <p>If you are creating a simple animation where you only want a defined animation start and end you can subsitute <code>from</code> and <code>to</code> for <code>0%</code> and <code>100%</code> respectively.</p>
-        <p>Rather than animating abruptly at <code>to</code>, the styles are applied gradually throughout the animation.</p>
-        <p>Go ahead and try for yourself. Use your cursor to hover over the example box to trigger the animation.</p>
-      </div>
-      <div class="column">
-        <div class="margin-bottom">
-          <script src="https://gist.github.com/noaharogers/2ea22eb505831dfa7354.js"></script>
-        </div>
-        <script src="https://gist.github.com/noaharogers/7ea68330581d09863b95.js"></script>
+      <div class="section__header">
+        <span class="step-number">2</span>
+        <h2>Create the animation</h2>
       </div>
     </div>
     <div class="row">
-      <div class="example-box">
-        <figure class="square square--small"></figure>
-        <figure class="square square--small square--opacity square--absolute slide"></figure>
+      <div class="column">
+        <ul class="gist-list">
+          <li class="gist-list__item">
+            <script src="https://gist.github.com/noaharogers/eb7568e00252fac20961.js"></script>
+          </li>
+          <li class="gist-list__item">
+            <script src="https://gist.github.com/noaharogers/01ed29d6122f17bd1755.js"></script>
+          </li>
+        </ul>
+      </div>
+      <div class="column">
+        <p>Add your animation properties.</p>
+        <p>We can do this by either writing long or shorthand code.</p>
+        <p>I prefer shorthand because of how compact it is. The drawback with using shorthand is that you may not remember all of the animation properties.</p>
       </div>
     </div>
-    <div class="row">
+  </div>
+</section>
 
+<section class="section--alt">
+  <div class="container">
+    <div class="row">
+      <h2 class="section__header">Animation properties</h2>
+    </div>
+    <div class="row">
+      <div class="column">
+        <ul class="property-list">
+          <li class="property-list__item">
+            <h3>animation-direction</h3>
+            <p>Defines the direction the animation should be played.</p>
+          </li>
+          <li class="property-list__item">
+            <h3>animation-duration</h3>
+            <p>Defines how long it should take the animation to complete one cycle.</p>
+          </li>
+          <li class="property-list__item">
+            <h3>animation-fillmode</h3>
+            <p>Defines a style for the animation when it is not playing.</p>
+          </li>
+          <li class="property-list__item">
+            <h3>animation-delay</h3>
+            <p>Defines a delay until the animation starts.</p>
+          </li>
+        </ul>
+      </div>
+      <div class="column">
+        <ul class="property-list">
+          <li class="property-list__item">
+            <h3>animation-iteration-count</h3>
+            <p>Defines how many cycles the animation will play.</p>
+          </li>
+          <li class="property-list__item">
+            <h3>animation-name</h3>
+            <p>Specifies the name of the <code>@keyframe</code> animation.</p>
+          </li>
+          <li class="property-list__item">
+            <h3>animation-play-state</h3>
+            <p>Defines whether or not the animation is paused or running.</p>
+          </li>
+          <li class="property-list__item">
+            <h3>animation-timing-function</h3>
+            <p>Defines the speed curve of the animation.</p>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
 
 <section>
   <div class="container">
-    <h4 class="section__title">Animation properties</h4>
+    <div class="row">
+      <div class="section__header">
+        <span class="step-number">3</span>
+        <h2>Add the animation</h2>
+      </div>
+    </div>
     <div class="row">
       <div class="column">
-        <p>The <code>animation-direction</code> defines whether or not the animation should play in <code>normal</code>, <code>reverse</code> or <code>alternate</code> cycles.</p>
-        <p>The <code>animation-duration</code> defines how long it should take the animation to complete one cycle.</p>
-        <p>The <code>animation-iteration-count</code> determines how many cycles the animation will play.</p>
+        <p>This last and final step is to put the animation into your markup.</p>
+        <p>You have the option of putting the animation directly into your styled class, or creating a modular animation that can be applied to multiple elements.</p>
+        <p>Let's take a look at some examples.</p>
       </div>
       <div class="column">
-        <div class="margin-bottom">
-          <script src="https://gist.github.com/noaharogers/34c454c49510e799e18d.js"></script>
+        <script src="https://gist.github.com/noaharogers/f645b1f73b214de43ce0.js"></script>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h4 class="section__title">Example I</h4>
+    <div class="row">
+      <div class="column">
+        <p>This is an example of a basic animation.</p>
+        <p>This example demonstrates how <code>background</code>, <code>border-radius</code>, and <code>transform: rotate</code> work within <code>@keyframes</code>.</p>
+        <p>Each of the examples on this page are triggered by hovering anywhere inside the dark colored example box.</p>
+        <div class="example-box margin-top">
+          <figure class="square rotate-and-morph"></figure>
         </div>
-        <script src="https://gist.github.com/noaharogers/2aa6f4bf4a1a99f62ea7.js"></script>
+      </div>
+      <div class="column">
+        <ul class="gist-list">
+          <li class="gist-list__item">
+            <script src="https://gist.github.com/noaharogers/3113e1e6e34f340a80f4.js"></script>
+          </li>
+          <li class="gist-list__item">
+            <script src="https://gist.github.com/noaharogers/0f3ca95f2cf88f3ce8af.js"></script>
+          </li>
+        </ul>
       </div>
     </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h4 class="section__title">Example II</h4>
     <div class="row">
-      <p>This particular animation involves numerous elements, all of which are associated with different animations and <code>@keyframes</code>.
-      <p>Go ahead and try for yourself. Use your cursor to hover over the example box to trigger the animation.</p>
+      <div class="column">
+        <p>This particular animation rotates, moves to the right and changes colors throughout it's <code>@keyframes</code>. The animated and styled square also has an <code>opacity</code> on it, allowing you to see through it.</p>
+        <p>This animation also uses <code>from</code> and <code>to</code> values. These values are the same as <code>0%</code> and <code>100%</code> respectively</p>
+        <div class="example-box margin-top">
+          <figure class="square square--smal"></figure>
+          <figure class="square square--small square--opacity square--absolute slide"></figure>
+        </div>
+      </div>
+      <div class="column">
+        <ul class="gist-list">
+          <li class="gist-list__item">
+            <script src="https://gist.github.com/noaharogers/2ea22eb505831dfa7354.js"></script>
+          </li>
+          <li class="gist-list__item">
+            <script src="https://gist.github.com/noaharogers/7ea68330581d09863b95.js"></script>
+          </li>
+        </ul>
+      </div>
     </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h4 class="section__title">Example III</h4>
     <div class="row">
-      <div class="example-box">
-        <figure class="square square--small rotate"></figure>
-        <figure class="orb move-1"></figure>
-        <figure class="orb move-2"></figure>
-        <figure class="orb move-3"></figure>
-        <figure class="orb move-4"></figure>
+      <div class="column">
+        <p>This particular animation involves numerous elements, all of which are associated with different animations and <code>@keyframes</code>.</p>
+        <p>The orbs share a very similar animation. The biggest drifference is the positiong in which they actually get moved and their  <code>animation-duration</code>.</p>
+        <p>This example shows you how different items can be styled to move at different times. This is a fairly basic example, imagine the possibilities of numerous styles within your <code>@keyframes</code>.</p>
+        <div class="example-box margin-top">
+          <figure class="square square--small rotate"></figure>
+          <figure class="orb move-1"></figure>
+          <figure class="orb move-2"></figure>
+          <figure class="orb move-3"></figure>
+          <figure class="orb move-4"></figure>
+        </div>
+      </div>
+      <div class="column">
+        <ul class="gist-list">
+          <li class="gist-list__item">
+            <script src="https://gist.github.com/noaharogers/34c454c49510e799e18d.js"></script>
+          </li>
+          <li clas="gist-list__item">
+            <script src="https://gist.github.com/noaharogers/2aa6f4bf4a1a99f62ea7.js"></script>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
@@ -120,13 +217,16 @@ layout: default
 <section>
   <div class="container">
     <h4 class="section__title">Scalable Vector Graphics</h4>
-    <p>Perhaps one of the coolest things about animations is our ability to manipulate Scalable Vector Graphics or SVGs.</p>
-  </div>
-</section>
-
-<section>
-  <div class="container">
-    <h4 class="section__title">Compatibility</h4>
-    <p><a href="http://caniuse.com/#search=css%20animation">CSS Animations</a>.</p>
+    <div class="row">
+      <div class="column">
+        <p>Perhaps one of the coolest things about animations is our ability to manipulate Scalable Vector Graphics or SVGs.</p>
+        <p>Opening an SVG file in a text editor displays it's code. In turn, the <code>path</code> within the code can be styled or have animations applied to it.</p>
+        <p>In this example, our SVG turtle has a few basic animations applied to it. First, there is an animation applied to the entire SVG that changes the <code>opacity</code>, <code>scale</code> and <code>rotateY</code>. Also, the shell changes fill colors when hovered.</p>
+      </div>
+      <div class="column">
+        <div class="example-box">
+          {% include svg-example.html %}
+        </div>
+      </div>
   </div>
 </section>
