@@ -5,8 +5,7 @@ layout: default
 <div class="test"></div>
 <section>
   <div class="container">
-    <h4 class="section__title">Introduction</h4>
-    <p>Our brain is wired in such a way that moving objects grab our attention. Because of this, adding animations and transitions is a great way to keep users engaged and highlight areas of importance within our projects.</p>
+    <p>Our brain is wired in such a way that moving objects grab our attention. Because of this, adding animations is a great way to keep users engaged and highlight areas of importance within our projects.</p>
 
     <p>Animations are powerful. We can add them to almost any element within our markup. Our animations can perform simple tasks like adjusting the background or text color when a user hovers over an element or more complex tasks like <a href="http://neography.com/experiment/circles/solarsystem/" target="_blank">recreating the solar system</a> with just CSS.</p>
     <p>Let's go through a step-by-step walkthrough of how to create and use animations</p>
@@ -24,7 +23,7 @@ layout: default
     </div>
     <div class="row">
       <div class="column">
-        <p>The <code>@keyframes</code> rule allows us to style our element differently at certain times throughout it's animation.</p>
+        <p>The first step is to create our <code>@keyframes</code>. The <code>@keyframes</code> rule allows us to style our element differently at certain times throughout it's animation.</p>
         <p>Styles defined through <code>@keyframes</code> are applied gradually throughout the entirety of the animation.</p>
       </div>
       <div class="column">
@@ -55,7 +54,7 @@ layout: default
       <div class="column">
         <p>Next, let's add our animation properties.</p>
         <p>We can do this by either writing long or shorthand code.</p>
-        <p>I prefer shorthand because of how compact it is. The drawback with using shorthand is that you may not remember all of the animation properties.</p>
+        <p>I prefer shorthand because of how compact it is. The drawback with using shorthand is that you may not remember all of the animation properties. Animation properties can be a tad confusing. In the section below I have created a resource that can be useful when trying to figure out exactly what these properties do.</p>
       </div>
     </div>
   </div>
@@ -123,7 +122,7 @@ layout: default
       <div class="column">
         <p>This last and final step is to put the animation into your markup.</p>
         <p>You have the option of putting the animation directly into your styled class, or creating a modular animation that can be applied to multiple elements.</p>
-        <p>Let's take a look at some examples.</p>
+        <p>Now that we understand the basics of animations, let's take a look at a few examples and see some of the things we can do with them.</p>
       </div>
       <div class="column">
         <script src="https://gist.github.com/noaharogers/f645b1f73b214de43ce0.js"></script>
@@ -137,7 +136,6 @@ layout: default
     <h4 class="section__title">Example I</h4>
     <div class="row">
       <div class="column">
-        <p>This is an example of a basic animation.</p>
         <p>This example demonstrates how <code>background</code>, <code>border-radius</code>, and <code>transform: rotate</code> work within <code>@keyframes</code>.</p>
         <div class="example-box margin-top">
           <figure class="square rotate-and-morph"></figure>
@@ -163,7 +161,7 @@ layout: default
     <div class="row">
       <div class="column">
         <p>This particular animation rotates, moves to the right and changes colors throughout it's <code>@keyframes</code>. The animated and styled square also has an <code>opacity</code> on it, allowing you to see through it.</p>
-        <p>This animation also uses <code>from</code> and <code>to</code> values. These values are the same as <code>0%</code> and <code>100%</code> respectively</p>
+        <p>This animation also uses <code>from</code> and <code>to</code> values. These values are the same as <code>0%</code> and <code>100%</code>, respectively.</p>
         <div class="example-box margin-top">
           <figure class="square square--smal"></figure>
           <figure class="square square--small square--opacity square--absolute slide"></figure>
